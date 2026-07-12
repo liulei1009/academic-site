@@ -8,7 +8,7 @@ function setLanguage(nextLanguage) {
   translatable.forEach((element) => {
     element.textContent = element.dataset[language];
   });
-  toggle.textContent = language === "zh" ? "EN" : "中文";
+  toggle.textContent = language === "zh" ? "English" : "中文";
   toggle.setAttribute("aria-label", language === "zh" ? "切换到英文" : "Switch to Chinese");
   document.querySelector("nav").setAttribute("aria-label", language === "zh" ? "主导航" : "Main navigation");
 }
