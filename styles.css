@@ -131,10 +131,11 @@ a { color: inherit; text-decoration: none; }
 .project-grid h3 { margin: 0; font-size: 1.12rem; line-height: 1.45; }
 
 .service-layout { display: grid; grid-template-columns: minmax(240px, 0.7fr) 1.3fr; gap: 18px; }
-.editorial { padding: 20px; }
-.editorial p { margin: 0; padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--accent-dark); font-weight: 760; line-height: 1.5; }
-.editorial p:last-child { border-bottom: 0; }
-.service-tags { display: flex; flex-wrap: wrap; align-content: start; gap: 10px; }
+.editorial, .academic-service { padding: 20px; border: 1px solid var(--line); background: #fffbf5; }
+.editorial h3, .academic-service h3 { margin: 0 0 8px; color: var(--accent-dark); font-size: 1.05rem; }
+.editorial p, .academic-service p { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--blue); font-weight: 680; line-height: 1.55; }
+.editorial p:last-child, .academic-service p:last-child { border-bottom: 0; }
+.academic-service { background: #eef3f0; }
 .service-tags span, .contact-links a { padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; background: #fffbf5; color: var(--blue); font-weight: 700; }
 
 .contact { display: grid; grid-template-columns: minmax(260px, 0.9fr) 1.1fr; gap: 24px; align-items: center; margin: 0 clamp(20px, 5vw, 72px) clamp(32px, 4vw, 48px); padding-block: clamp(26px, 3.5vw, 38px); }
