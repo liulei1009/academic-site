@@ -131,7 +131,7 @@ a { color: inherit; text-decoration: none; }
 .project-grid article:first-child { grid-column: 1 / -1; }
 .project-grid h3 { margin: 0; font-size: 1.12rem; line-height: 1.45; }
 .project-list { display: grid; border-top: 1px solid var(--line); }
-.project-list article { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 18px; padding: 16px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; }
+.project-list article { padding: 16px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; }
 .project-list h3 { margin: 0; font-size: 1.04rem; line-height: 1.45; }
 
 .service-layout { display: grid; grid-template-columns: minmax(240px, 0.7fr) 1.3fr; gap: 18px; }
