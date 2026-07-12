@@ -94,7 +94,7 @@ a { color: inherit; text-decoration: none; }
 
 .section, .contact, footer { padding-inline: clamp(20px, 6vw, 88px); }
 .contact p:not(.section-kicker) { margin: 0; color: var(--muted); line-height: 1.65; }
-.research-grid article, .project-grid article, .publication-list article, .editorial, .contact { border: 1px solid var(--line); background: var(--panel); }
+.research-grid article, .project-grid article, .project-list article, .publication-list article, .editorial, .academic-service, .service-review, .contact { border: 1px solid var(--line); background: var(--panel); }
 
 .section { padding-block: clamp(38px, 4.8vw, 58px); }
 .section-heading { position: relative; display: flex; align-items: center; margin-bottom: 26px; padding-bottom: 14px; }
@@ -110,6 +110,7 @@ a { color: inherit; text-decoration: none; }
 .publication-list article { display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 18px; align-items: center; padding: 17px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; }
 .publication-list h3 { margin: 0; font-size: clamp(0.98rem, 1.25vw, 1.12rem); line-height: 1.45; font-weight: 700; }
 .publication-list p { margin: 7px 0 4px; color: var(--muted); font-size: 0.91rem; line-height: 1.5; }
+.author-highlight { color: var(--blue); font-weight: 800; }
 .publication-list span { color: var(--accent); font-weight: 750; }
 .publication-list strong { color: var(--blue); font-family: Georgia, "Times New Roman", serif; font-size: 1.5rem; text-align: right; }
 .more-publications { border-bottom: 1px solid var(--line); }
@@ -119,7 +120,7 @@ a { color: inherit; text-decoration: none; }
 .timeline-section { background: #eef3f0; }
 .timeline { display: grid; gap: 4px; border-top: 1px solid rgba(16, 23, 31, 0.16); }
 .timeline article { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; padding: 18px 0; border-bottom: 1px solid rgba(16, 23, 31, 0.16); }
-.timeline time, .project-grid time { color: var(--accent-dark); font-weight: 800; }
+.timeline time, .project-grid time, .project-list time { color: var(--accent-dark); font-weight: 800; }
 .timeline h3 { margin: 0 0 8px; font-size: 1.18rem; }
 .timeline p { margin: 0; color: var(--muted); line-height: 1.6; }
 .timeline p a { color: var(--accent-dark); font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
@@ -129,6 +130,9 @@ a { color: inherit; text-decoration: none; }
 .project-grid article { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 18px; align-items: start; padding: 18px; }
 .project-grid article:first-child { grid-column: 1 / -1; }
 .project-grid h3 { margin: 0; font-size: 1.12rem; line-height: 1.45; }
+.project-list { display: grid; border-top: 1px solid var(--line); }
+.project-list article { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 18px; padding: 16px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; }
+.project-list h3 { margin: 0; font-size: 1.04rem; line-height: 1.45; }
 
 .service-layout { display: grid; grid-template-columns: minmax(240px, 0.7fr) 1.3fr; gap: 18px; }
 .editorial, .academic-service { padding: 20px; border: 1px solid var(--line); background: #fffbf5; }
@@ -136,6 +140,9 @@ a { color: inherit; text-decoration: none; }
 .editorial p, .academic-service p { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--blue); font-weight: 680; line-height: 1.55; }
 .editorial p:last-child, .academic-service p:last-child { border-bottom: 0; }
 .academic-service { background: #eef3f0; }
+.service-review { grid-column: 1 / -1; padding: 20px; background: #fffaf2; }
+.service-review h3 { margin: 0 0 12px; color: var(--accent-dark); font-size: 1.05rem; }
+.service-tags { display: flex; flex-wrap: wrap; gap: 9px; }
 .service-tags span, .contact-links a { padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; background: #fffbf5; color: var(--blue); font-weight: 700; }
 
 .contact { display: grid; grid-template-columns: minmax(260px, 0.9fr) 1.1fr; gap: 24px; align-items: center; margin: 0 clamp(20px, 5vw, 72px) clamp(32px, 4vw, 48px); padding-block: clamp(26px, 3.5vw, 38px); }
@@ -162,7 +169,7 @@ footer p { margin: 0; }
   .research-grid, .project-grid { grid-template-columns: 1fr; }
   .section-heading { margin-bottom: 26px; }
   .section-heading::after { width: min(240px, 72vw); }
-  .publication-list article, .timeline article, .project-grid article { grid-template-columns: 1fr; }
+  .publication-list article, .timeline article, .project-grid article, .project-list article { grid-template-columns: 1fr; }
   .publication-list strong { text-align: left; }
   .research-grid article { min-height: 150px; }
   footer { flex-direction: column; }
