@@ -13,5 +13,8 @@ function setLanguage(nextLanguage) {
   document.querySelector("nav").setAttribute("aria-label", language === "zh" ? "主导航" : "Main navigation");
 }
 
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+setLanguage(requestedLanguage === "en" ? "en" : "zh");
+
 toggle.addEventListener("click", () => setLanguage(language === "zh" ? "en" : "zh"));
 document.querySelector("#year").textContent = new Date().getFullYear();
